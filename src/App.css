@@ -143,7 +143,7 @@ nav ul li a {
   font-weight: bold;
 }
 nav ul li {
-  transition: 0.2s all ease-in-out;
+  transition: 0.2cd pro s all ease-in-out;
 }
 nav ul li:hover {
   transform: scale(1.1);
@@ -154,9 +154,83 @@ nav button {
   color: white;
   width: 60px;
   text-align: center;
+  cursor: pointer;
   text-transform: capitalize;
+  transition: 0.3s all linear;
   padding: 0.5%;
+}
+nav button:hover {
+  background: #000;
 }
 nav img {
   padding-top: 10px;
+}
+
+/* hero section */
+main {
+  display: flex;
+  width: 90%;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh-50px);
+  margin-top: 40px;
+}
+.left {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.left h1 {
+  font-size: 108px;
+  text-align: justify;
+  line-height: 6rem;
+}
+.left .tagline {
+  color: rgb(111, 111, 111);
+  font-size: 16px;
+  font-weight: 500;
+  width: 80%;
+}
+.left .button-container {
+  display: flex;
+  gap: 20px;
+}
+.left div button {
+  background: #d01c28;
+  width: 120px;
+  color: white;
+  height: 30px;
+  font-size: 17px;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  text-transform: capitalize;
+  transition: 0.3s all ease-in-out;
+}
+
+.left .button-container button:nth-child(2) {
+  background: black;
+
+  color: white;
+}
+.left div button:hover {
+  color: white;
+  background: #000;
+}
+.left .button-container button:nth-child(2):hover {
+  background: #d01c28;
+}
+.left .available {
+  color: gray;
+  font-size: 14px;
+  text-transform: capitalize;
+}
+.left .image-container {
+  display: flex;
+  gap: 15px;
+}
+
+.right img {
+  width: 510px;
 }
